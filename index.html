@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+		<title></title>
+		<!--<link rel="stylesheet" href="css/xiangying.css" />-->
+		<style type="text/css">
+			*{margin: 0;padding: 0;box-sizing: border-box;}
+			li{list-style: none;}
+			img{display: block;width: 100%;}
+			#wrap{display: flex;flex-wrap: wrap;}
+			#wrap .left{width: 50%;padding: 10px;}
+			#wrap .right{width: 50%;display: flex;}
+			#wrap .right li{width: 50%;padding: 10px;}
+			#content{display: flex;flex-wrap: wrap;}
+			#content li{width: 20%;padding: 10px;}
+			#content li p:nth-of-type(2){color: #999;display: flex;justify-content: space-between;font-size: 14px;height: 24px;line-height: 24px;}
+			#content li p:nth-of-type(1){height: 30px;line-height: 30px;}
+			@media (min-width: 980px) and (max-width: 1199px){
+				#content li{width: 25%;padding: 10px;}
+			}
+			@media (min-width: 640px) and (max-width: 979px){
+				#content li{width: 33.33%;padding: 10px;}
+				#wrap .left{width: 100%;}
+				#wrap .right{width: 100%}
+			}
+			@media (max-width: 639px){
+				#content li{width: 50%;padding: 10px;}
+				#wrap .left{width: 100%;}
+				#wrap .right{width: 100%}
+			}
+			#top{position: fixed;display: flex;background: rgba(0,0,0,0.5);width: 100%;color: #ccc;text-align: center;}
+			#top .menu{display: none;}
+			#top h1{flex: 1;text-align: center;}
+			#top ul{flex: 2;display: flex;}
+			#top ul li{line-height: 44px;flex: 1;}
+			@media  screen and (max-width:979px ) {
+				#top .menu{display: block;height: 44px;line-height: 44px;background: rgba(0,0,0,0.5);width: 100%;}
+				#top h1{display: none;}
+				#top ul{position: absolute;top: 44px;flex-direction: column;background: rgba(0,0,0,0.5);width: 100%;height: 0;transition: all 0.5s linear 0s;overflow: hidden;}
+				#top:hover ul{height: 176px;}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id="top">
+			
+			<div class="menu">menu</div>
+			<h1 class="logo">logo</h1>
+			<ul>
+				<li>文章</li>
+				<li>素材</li>
+				<li>活动</li>
+				<li>更多</li>
+			</ul>
+		</div>
+		<div id="banner">
+			<img src="img/top-bg.png" alt="" />
+		</div>
+		<div id="wrap">
+			<div class="left">
+				<img src="img/img/swiper1.jpeg" alt="" />
+			</div>
+			<ul class="right">
+				<li><img src="img/img/1.png" alt="" /></li>
+				<li><img src="img/img/2.png" alt="" /></li>
+			</ul>
+		</div>
+		<ul id="content">
+			<li>
+				<img src="img/img/1.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/2.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/3.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/4.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/5.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/4.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/1.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/2.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/3.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/4.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/5.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+			<li>
+				<img src="img/img/4.jpg" alt="" />
+				<p>迷你微型摄影展</p>
+				<p>
+					<timer>2016-12-12</timer>
+					<span>作者：tom</span>
+				</p>
+			</li>
+		</ul>
+		<br  />
+		<br />
+		<br />
+		<br />
+	</body>
+</html>
